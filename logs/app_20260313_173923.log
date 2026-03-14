@@ -1,0 +1,88 @@
+2026-03-13 17:39:23,621 - main - INFO - === Logging system initialized ===
+2026-03-13 17:39:23,621 - main - INFO - Log file: logs/app_20260313_173923.log
+2026-03-13 17:39:23,621 - main - INFO - Log level: INFO
+2026-03-13 17:39:23,621 - main - INFO - Timestamp: 20260313_173923
+2026-03-13 17:39:24,277 - main - INFO - Included router: routers.aihub.router
+2026-03-13 17:39:24,295 - main - INFO - Included router: routers.auth.router
+2026-03-13 17:39:24,350 - main - INFO - Included router: routers.game_rooms.router
+2026-03-13 17:39:24,354 - main - INFO - Included router: routers.health.router
+2026-03-13 17:39:24,457 - main - INFO - Included router: routers.multiplayer.router
+2026-03-13 17:39:24,494 - main - INFO - Included router: routers.room_players.router
+2026-03-13 17:39:24,514 - main - INFO - Included router: routers.settings.router
+2026-03-13 17:39:24,549 - main - INFO - Included router: routers.storage.router
+2026-03-13 17:39:24,559 - main - INFO - Included router: routers.user.router
+2026-03-13 17:39:24,560 - main - INFO - === Application startup initiated ===
+2026-03-13 17:39:24,560 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-13 17:39:24,560 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-13 17:39:24,560 - core.database - INFO - Starting database initialization...
+2026-03-13 17:39:24,560 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-03-13 17:39:24,560 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-13 17:39:24,561 - core.database - INFO - Creating async database engine...
+2026-03-13 17:39:24,561 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-03-13 17:39:24,615 - core.database - INFO - Database engine created successfully
+2026-03-13 17:39:24,616 - core.database - INFO - Creating async session maker...
+2026-03-13 17:39:24,616 - core.database - INFO - Async session maker created successfully
+2026-03-13 17:39:24,616 - core.database - INFO - Database connection initialized successfully
+2026-03-13 17:39:24,616 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-13 17:39:24,616 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-13 17:39:24,616 - core.database - INFO - 🔧 Starting table creation...
+2026-03-13 17:39:26,072 - core.database - INFO - Tables initialized successfully
+2026-03-13 17:39:26,072 - core.database - DEBUG - [DB_OP] Create tables completed in 1.4560s
+2026-03-13 17:39:26,135 - services.database - INFO - 🔧 Table creation completed
+2026-03-13 17:39:26,135 - services.database - INFO - Database initialized successfully
+2026-03-13 17:39:26,136 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.5754s
+2026-03-13 17:39:26,136 - services.mock_data - INFO - mock_data directory not found, skipping mock initialization
+2026-03-13 17:39:26,136 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-13 17:39:26,136 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-13 17:39:26,136 - core.database - INFO - Starting database initialization...
+2026-03-13 17:39:26,136 - core.database - INFO - Database already initialized
+2026-03-13 17:39:26,136 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-13 17:39:26,136 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-13 17:39:26,137 - core.database - INFO - Tables already initialized
+2026-03-13 17:39:26,137 - services.database - INFO - 🔧 Table creation completed
+2026-03-13 17:39:26,137 - services.database - INFO - Database initialized successfully
+2026-03-13 17:39:26,137 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0009s
+2026-03-13 17:39:26,137 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-03-13 17:39:26,137 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-03-13 17:39:26,580 - services.auth - DEBUG - Admin user 1024467 already exists
+2026-03-13 17:39:26,644 - main - INFO - === Application startup completed successfully ===
+2026-03-13 17:39:36,232 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:39:36,232 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-03-13 17:39:36,944 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.7116s
+2026-03-13 17:39:37,131 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:39:37,131 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-03-13 17:39:38,143 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0117s
+2026-03-13 17:39:38,642 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:39:38,642 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0003s
+2026-03-13 17:39:39,462 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8198s
+2026-03-13 17:39:39,833 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:39:39,833 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-03-13 17:39:40,905 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0719s
+2026-03-13 17:40:30,465 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:30,465 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-03-13 17:40:30,973 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5086s
+2026-03-13 17:40:31,164 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:31,165 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0007s
+2026-03-13 17:40:31,987 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8231s
+2026-03-13 17:40:32,669 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:32,670 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-03-13 17:40:33,492 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8223s
+2026-03-13 17:40:34,116 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:34,117 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-03-13 17:40:34,187 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:34,188 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-03-13 17:40:34,624 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.5073s
+2026-03-13 17:40:35,473 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.2856s
+2026-03-13 17:40:35,715 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:35,716 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-03-13 17:40:36,641 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.9253s
+2026-03-13 17:40:37,228 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:37,228 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0005s
+2026-03-13 17:40:38,074 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.8466s
+2026-03-13 17:40:38,232 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-13 17:40:38,232 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0004s
+2026-03-13 17:40:39,270 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.0381s
+2026-03-13 17:46:15,993 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-13 17:46:16,130 - core.database - INFO - Database connection closed and engine disposed
+2026-03-13 17:46:16,130 - services.database - INFO - Database connections closed
+2026-03-13 17:46:16,130 - services.database - DEBUG - [DB_OP] Database close completed in 0.1369s

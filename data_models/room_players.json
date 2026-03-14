@@ -1,0 +1,49 @@
+{
+    "title": "room_players",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "room_id": {
+            "type": "integer",
+            "description": "Room ID reference"
+        },
+        "player_id": {
+            "type": "string",
+            "description": "Unique player identifier"
+        },
+        "player_name": {
+            "type": "string",
+            "description": "Player display name"
+        },
+        "guesses": {
+            "type": "integer",
+            "description": "Number of guesses in current round"
+        },
+        "solved": {
+            "type": "boolean",
+            "description": "Whether player solved current round"
+        },
+        "failed": {
+            "type": "boolean",
+            "description": "Whether player failed current round"
+        },
+        "total_score": {
+            "type": "integer",
+            "description": "Cumulative score across all rounds"
+        },
+        "last_seen": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last activity timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "room_id",
+        "player_id",
+        "player_name"
+    ]
+}

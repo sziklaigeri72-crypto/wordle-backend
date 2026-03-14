@@ -1,0 +1,54 @@
+{
+    "title": "game_rooms",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "room_code": {
+            "type": "string",
+            "description": "Unique room code"
+        },
+        "target_word": {
+            "type": "string",
+            "description": "Target word for current round"
+        },
+        "host_player_id": {
+            "type": "string",
+            "description": "Host player ID"
+        },
+        "game_started": {
+            "type": "boolean",
+            "description": "Whether game has started"
+        },
+        "winner_player_id": {
+            "type": "string",
+            "description": "Winner player ID for current round"
+        },
+        "winner_name": {
+            "type": "string",
+            "description": "Winner name for current round"
+        },
+        "status": {
+            "type": "string",
+            "description": "Room status: waiting, playing, round_over, finished"
+        },
+        "current_round": {
+            "type": "integer",
+            "description": "Current round number, starts at 1"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Creation timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "room_code",
+        "target_word",
+        "host_player_id",
+        "status"
+    ]
+}
